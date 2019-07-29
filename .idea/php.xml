@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Behat">
+    <behat_settings>
+      <BehatSettings behat_path="$PROJECT_DIR$" />
+    </behat_settings>
+  </component>
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="localhost" id="79ef8f42-c057-4aad-a8ce-7942805c4cc8" name="localhost" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/html/php-menu" />
+          <mapping local-root="$PROJECT_DIR$/drink.php" remote-root="/var/www/html/php-menu/drink.php" />
+          <mapping local-root="$PROJECT_DIR$/images" remote-root="/var/www/html/php-menu/images" />
+          <mapping local-root="$PROJECT_DIR$/index.php" remote-root="/var/www/html/php-menu/index.php" />
+          <mapping local-root="$PROJECT_DIR$/menu.php" remote-root="/var/www/html/php-menu/menu.php" />
+          <mapping local-root="$PROJECT_DIR$/menu_item.php" remote-root="/var/www/html/php-menu/menu_item.php" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7" />
+</project>
