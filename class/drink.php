@@ -4,9 +4,9 @@
 
     class Drink extends Menu
     {
-        public function __construct($name, $price, $images, $amount)
+        public function __construct($name, $price, $images, $coment, $amount)
         {
-            parent::__construct($name, $price, $images);
+            parent::__construct($name, $price, $images, $coment);
             $this->amount = $amount;
         }
 

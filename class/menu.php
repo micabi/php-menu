@@ -5,12 +5,14 @@
         private $name;
         private $price;
         private $images;
+        private $coment;
 
-        public function __construct($name, $price, $images)
+        public function __construct($name, $price, $images, $coment)
         {
             $this->name = $name;
             $this->price = $price;
             $this->images = $images;
+            $this->coment = $coment;
         }
 
         public function getName()
@@ -32,5 +34,9 @@
         public function getImages()
         {
             return $this->images;
+        }
+
+        public function getComent(){
+            return $this->coment;
         }
     }
