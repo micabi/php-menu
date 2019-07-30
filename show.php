@@ -1,6 +1,8 @@
 <?php
 require_once('class/menu_item.php');
+require_once('class/menu_review.php');
 $menuName = $_GET['name'];
+// $menuName = 'ルートビア';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -28,6 +30,14 @@ $menuName = $_GET['name'];
   <?php endif; ?>
 
 <?php endforeach; ?>
-
+<hr>
+<h3>レビュー</h3>
+<?php foreach($reviews as $review): ?>
+<?php $user = $review->getReviewer($users); ?>
+    <?php if($review->getMenuName() == $menuName): ?>
+      <p><?php echo $user->getUserId(); ?>: <?php echo $user->getUserName(); ?>: <?php echo $user->getGender(); ?></p>
+      <p><?php echo $review->getBody(); ?></p>
+    <?php endif; ?>
+<?php endforeach; ?>
 </body>
 </html>
